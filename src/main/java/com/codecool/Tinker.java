@@ -22,11 +22,11 @@ public class Tinker {
         int iterator = K - 1;
 
         while (!tinkerList.isEmpty()) {
-            iterator = iterator % tinkerList.size();
+            iterator %= tinkerList.size();
             System.out.println(
-                tinkerList.remove(iterator--)
+                tinkerList.remove(iterator)
             );
-            iterator += K;
+            iterator += K - 1;
         }
     }
 
